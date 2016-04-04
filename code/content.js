@@ -1,7 +1,5 @@
-$('#nav').on({
-    'mousewheel': function(e) {
-        if (e.target.id == 'el') return;
-        e.preventDefault();
-        e.stopPropagation();
-    }
-})
+document.getElementById('dp_0').addEventListener('mousewheel', function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  e.stopImmediatePropagation();
+});
